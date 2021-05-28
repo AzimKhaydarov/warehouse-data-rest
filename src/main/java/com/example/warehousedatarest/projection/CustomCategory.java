@@ -9,7 +9,7 @@ public interface CustomCategory {
 
     String getName();
 
-    Integer getParentCategory();
+    Category getParentCategory();
 
     boolean isActive();
 }

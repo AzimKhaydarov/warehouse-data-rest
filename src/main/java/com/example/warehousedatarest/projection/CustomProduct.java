@@ -1,5 +1,8 @@
 package com.example.warehousedatarest.projection;
 
+import com.example.warehousedatarest.entity.Attachment;
+import com.example.warehousedatarest.entity.Category;
+import com.example.warehousedatarest.entity.Measurement;
 import com.example.warehousedatarest.entity.Product;
 import org.springframework.data.rest.core.config.Projection;
 
@@ -7,9 +10,9 @@ import org.springframework.data.rest.core.config.Projection;
 public interface CustomProduct {
    Integer getId();
    String getName();
-   Integer getCategory();
-   Integer getPhoto();
+   Category getCategory();
+   Attachment getPhoto();
    String getCode();
-   Integer getMeasurement();
+   Measurement getMeasurement();
    boolean isActive();
 }
